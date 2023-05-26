@@ -5,6 +5,9 @@
  */
 package ejercicio9poo;
 
+import Entidad.Matematica;
+import Servicios.ServicioMatematica;
+
 /**
  *
  * @author daiay
@@ -15,7 +18,16 @@ public class Ejercicio9POO {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        ServicioMatematica sm = new ServicioMatematica();
+        Matematica matematica1 = sm.numeros();
+        sm.devolverMayor();
+         System.out.println("_____________________");
+        sm.calcularPotencia();
+        System.out.println("_____________________");
+        sm.calculaRaiz();
+        
+        
     }
     
 }
